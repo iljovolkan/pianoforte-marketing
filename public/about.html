@@ -133,6 +133,13 @@
   .about-media{aspect-ratio:4/3; background:linear-gradient(135deg, var(--lilac-pale), var(--sand-pale)); border-radius:20px; display:flex; align-items:center; justify-content:center; color:var(--mist); font-size:13px;}
   .placeholder-tag{display:inline-block; font-size:11px; font-weight:700; color:var(--wine); background:var(--wine-pale); padding:4px 10px; border-radius:8px; margin-bottom:14px;}
 
+  /* ===== EMPTY BLOG STATE ===== */
+  .empty-blog{text-align:center; max-width:420px; margin:0 auto; padding:60px 20px;}
+  .empty-blog-icon{width:64px; height:64px; margin:0 auto 20px; background:var(--lilac-pale); border-radius:18px; display:flex; align-items:center; justify-content:center;}
+  .empty-blog-icon svg{width:30px; height:30px; stroke:var(--lilac-deep);}
+  .empty-blog h3{font-size:22px; margin-bottom:10px;}
+  .empty-blog p{color:var(--mist); font-size:14.5px;}
+
   /* ===== BLOG ===== */
   .blog-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
   .blog-card{background:var(--surface); border:1.5px solid var(--line); border-radius:16px; overflow:hidden;}
@@ -271,7 +278,6 @@
 <div class="page-hero tint-lilac">
   <div class="wrap">
     <div class="breadcrumb"><a href="index.html" data-i18n="breadcrumb_home">Почетна</a> / <span data-i18n="nav_about_us">За нас</span></div>
-    <span class="eyebrow" data-i18n="pending_marina">Текст чека — Марина</span>
     <h1 data-i18n="about_title">За PianoForte</h1>
   </div>
 </div>
@@ -293,8 +299,8 @@
       </svg>
     </div>
     <div>
-      <p style="color:var(--mist); margin-bottom:14px;" data-i18n="about_p1">[ПОПОЛНИ] Овде доаѓа приказната на училиштето — кога е основано, филозофијата на учење, зошто родителите го избираат PianoForte.</p>
-      <p style="color:var(--mist);" data-i18n="about_p2">[ПОПОЛНИ] Дополнителен пасус за наставниот пристап и искуството на професорите.</p>
+      <p style="color:var(--mist); margin-bottom:14px;" data-i18n="about_p1">PianoForte е музичко училиште во Скопје кое верува дека секое дете заслужува квалитетно музичко образование, без разлика на возраст или претходно искуство. Нашата цел е да создадеме сигурна, поттикнувачка средина каде љубовта кон музиката природно расте.</p>
+      <p style="color:var(--mist);" data-i18n="about_p2">Повеќе детали за нашиот тим и наставниот пристап наскоро.</p>
     </div>
   </div>
 </section>
@@ -373,7 +379,7 @@
       blog_title:'Блог', blog_sub:'Новости, интервјуа и приказни од нашето училиште.',
       blog_tag1:'Новост', blog_title1:'[ПОПОЛНИ наслов]', blog_body1:'[ПОПОЛНИ краток опис на текстот...]',
       blog_tag2:'Интервју', blog_title2:'[ПОПОЛНИ наслов]', blog_body2:'[ПОПОЛНИ краток опис на текстот...]',
-      blog_tag3:'Приказна', blog_title3:'[ПОПОЛНИ наслов]', blog_body3:'[ПОПОЛНИ краток опис на текстот...]',
+      blog_empty_title:'Наскоро првите објави', blog_empty_body:'Подготвуваме новости, интервјуа и приказни од нашето училиште. Врати се наскоро!',
       contact_title:'Контакт', contact_sub:'Прашај нè било што — за пакети, термини, или локации.',
       contact_loc1:'Локација 1', contact_loc2:'Локација 2', contact_hours:'Работно време', contact_hours_val:'Понеделник – Петок: 12:00 – 20:00',
       form_name:'Име и презиме', form_email:'Email', form_msg:'Порака', form_submit:'Испрати порака',
@@ -388,9 +394,7 @@
       teaser_contact_title:'Контакт', teaser_contact_body:'Прашај нè било што.',
       teaser_more:'Дознај повеќе →', explore_head:'Истражи го училиштето',
       explore_btn:'Истражи →',
-      stat1_num:'[ПОПОЛНИ]', stat1_lbl:'Задоволни ученици',
-      stat2_num:'[ПОПОЛНИ]', stat2_lbl:'Професионални професори',
-      stat3_lbl:'Инструменти',
+      stat3_lbl:'Инструменти', stat4_num:'2', stat4_lbl:'Локации во Скопје', stat5_num:'Групно и индивидуално', stat5_lbl:'Настава за секое дете',
       feat1_title:'Лесно закажување', feat1_body:'Резервирај термин онлајн за неколку секунди.',
       feat2_title:'Флексибилно плаќање', feat2_body:'Месечно, полугодишно или целосно, по твoj избор.',
       feat3_title:'Персонализирано учење', feat3_body:'Програми прилагодени на секое дете.',
@@ -416,7 +420,7 @@
       blog_title:'Blog', blog_sub:'News, interviews, and stories from our school.',
       blog_tag1:'News', blog_title1:'[FILL IN title]', blog_body1:'[FILL IN short excerpt...]',
       blog_tag2:'Interview', blog_title2:'[FILL IN title]', blog_body2:'[FILL IN short excerpt...]',
-      blog_tag3:'Story', blog_title3:'[FILL IN title]', blog_body3:'[FILL IN short excerpt...]',
+      blog_empty_title:'First posts coming soon', blog_empty_body:'We\'re preparing news, interviews, and stories from our school. Check back soon!',
       contact_title:'Contact', contact_sub:'Ask us anything — packages, time slots, or locations.',
       contact_loc1:'Location 1', contact_loc2:'Location 2', contact_hours:'Working hours', contact_hours_val:'Monday – Friday: 12:00 – 20:00',
       form_name:'Full name', form_email:'Email', form_msg:'Message', form_submit:'Send message',
@@ -431,9 +435,7 @@
       teaser_contact_title:'Contact', teaser_contact_body:'Ask us anything.',
       teaser_more:'Learn more →', explore_head:'Explore the school',
       explore_btn:'Explore →',
-      stat1_num:'[FILL IN]', stat1_lbl:'Happy students',
-      stat2_num:'[FILL IN]', stat2_lbl:'Professional teachers',
-      stat3_lbl:'Instruments',
+      stat3_lbl:'Instruments', stat4_num:'2', stat4_lbl:'Locations in Skopje', stat5_num:'Group & 1-on-1', stat5_lbl:'Teaching for every child',
       feat1_title:'Easy booking', feat1_body:'Book a lesson online in seconds.',
       feat2_title:'Flexible payment', feat2_body:'Monthly, half-yearly, or full — your choice.',
       feat3_title:'Personalized learning', feat3_body:'Programs tailored to every child.',
@@ -471,17 +473,21 @@
   if(nlForm) nlForm.addEventListener('submit', e=>{
     e.preventDefault();
     // TODO: поврзи со вистински backend за собирање email адреси (пр. Brevo листа)
-    alert(currentLang==='mk' ? 'Ти благодариме! Ќе те известиме за новости.' : 'Thank you! We\'ll keep you posted.');
-    nlOverlay.classList.remove('show');
+    const modal = nlForm.closest('.newsletter-modal');
+    modal.innerHTML = '<div style="padding:20px 0;"><div style="font-size:38px; margin-bottom:14px;">✓</div><h3>' +
+      (currentLang==='mk' ? 'Ти благодариме!' : 'Thank you!') + '</h3><p>' +
+      (currentLang==='mk' ? 'Ќе те известиме за новости и попусти.' : 'We\'ll keep you posted on news and discounts.') + '</p></div>';
+    setTimeout(()=>{ nlOverlay.classList.remove('show'); }, 2200);
   });
 
-  // contact form — stub, opens mail client for now
+  // contact form — stub, shows inline confirmation for now
   const cForm = document.getElementById('contactForm');
   if(cForm) cForm.addEventListener('submit', e=>{
     e.preventDefault();
     // TODO: поврзи со вистински backend/email сервис
-    alert(currentLang==='mk' ? 'Пораката е испратена! Ќе те контактираме наскоро.' : 'Message sent! We\'ll get back to you soon.');
-    e.target.reset();
+    cForm.innerHTML = '<div style="text-align:center; padding:30px 10px;"><div style="font-size:38px; margin-bottom:14px;">✓</div><h4 style="margin-bottom:8px;">' +
+      (currentLang==='mk' ? 'Пораката е испратена!' : 'Message sent!') + '</h4><p style="color:var(--mist); font-size:14px;">' +
+      (currentLang==='mk' ? 'Ќе те контактираме наскоро.' : 'We\'ll get back to you soon.') + '</p></div>';
   });
 
 })();
